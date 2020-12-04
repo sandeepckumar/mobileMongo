@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const Mobile = require("../models/Mobile");
 const Company = require("../models/Mobile");
-const Mobile = require("../models/Mobile");
 
 router.post("/addMobile", (res, req) => {
   const { company, model } = req.body;

@@ -8,6 +8,7 @@ db(process.env.ATLAS_DB);
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded());
+app.use("/api", invenRouter);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server started on Port ${process.env.PORT}`);

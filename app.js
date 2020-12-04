@@ -10,5 +10,5 @@ app.use(express.json());
 app.use(express.urlencoded());
 
 app.listen(process.env.PORT, () => {
-  console.log("Server started on Port 5000.");
+  console.log(`Server started on Port ${process.env.PORT}`);
 });
